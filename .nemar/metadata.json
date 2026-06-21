@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "dataset_id": "on003374",
-  "source": "openneuro",
-  "source_id": "ds003374",
+  "pipeline_stage": "validated",
   "title": "Dataset of neurons and intracranial EEG from human amygdala during aversive dynamic visual stimulation",
+  "license": "CC0",
+  "dataset_type": "raw",
   "authors": {
     "Tommaso Fedele": {},
     "Ece Boran": {},
@@ -14,27 +14,29 @@
     "Hennric Jokeit": {},
     "Johannes Sarnthein": {}
   },
-  "license": "CC0",
-  "dataset_type": "raw",
   "related_identifiers": [
     {
       "identifier": "10.18112/openneuro.ds003374.v1.1.1",
       "identifier_type": "DOI",
       "relation_type": "IsIdenticalTo"
+    },
+    {
+      "identifier": "10.1016/j.neuroimage.2020.116705",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/on003374",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on003374",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
   ],
-  "pipeline_stage": "seeded",
-  "bids_version": "1.4.0",
-  "recording_modality": [
-    "ieeg"
-  ],
-  "datatypes": [
-    "ieeg"
-  ],
   "funding_references": [
-    {
-      "funder_name": "Swiss National Science Foundation, SNSF 320030_156029"
-    },
     {
       "funder_name": "Mach-Gaensslen Stiftung"
     },
@@ -45,8 +47,59 @@
       "funder_name": "Forschungskredit der Universität Zürich"
     },
     {
-      "funder_name": "Russian Federation for Basic Research, RFBR 20-015-00176 A"
+      "funder_name": "Swiss National Science Foundation",
+      "award_number": "SNSF 320030_156029"
+    },
+    {
+      "funder_name": "Russian Foundation for Basic Research",
+      "award_number": "RFBR 20-015-00176 A"
     }
   ],
-  "acknowledgements": "We thank the physicians and the staff at Schweizerische Epilepsie-Klinik for their assistance and the subjects for their participation. We acknowledge grants awarded by the Swiss National Science Foundation (SNSF 320030_156029 to J.S.), Mach-Gaensslen Stiftung (to J.S.), Stiftung für wissenschaftliche Forschung an der Universität Zürich (to J.S.), Forschungskredit der Universität Zürich (to T.F.) and Russian Foundation for Basic Research (RFBR 20-015-00176 A to T.F.). The funders had no role in the design or analysis of the study."
+  "resource_type_general": "Dataset",
+  "modalities": [
+    "ieeg"
+  ],
+  "resource_type_specific": "iEEG Dataset",
+  "sizes": [
+    "0.0 KB (1 files)"
+  ],
+  "formats": [
+    ".edf",
+    ".eeg",
+    ".gitattributes",
+    ".h5",
+    ".json",
+    ".m",
+    ".md",
+    ".pdf",
+    ".tsv",
+    ".vhdr",
+    ".vmrk"
+  ],
+  "description": "This dataset comprises intracranial EEG recordings and single-unit neuronal activity from the human amygdala of nine epilepsy patients during exposure to aversive dynamic visual stimuli. Subjects viewed fearful faces (aversive condition) interleaved with neutral landscapes while undergoing preoperative invasive monitoring in the mesial temporal lobe. The dataset enables investigation of amygdalar responses to emotional stimuli across multiple spatial scales, from macroscopic field potentials to single-neuron firing patterns.",
+  "methods_description": "Intracranial EEG and neuronal spike recordings were collected from nine epilepsy patients undergoing preoperative invasive monitoring of the mesial temporal lobe. Subjects were presented with dynamic visual sequences of fearful faces (aversive condition) interleaved with neutral landscape sequences (neutral condition). Data are provided in BIDS standard format, with extended neuronal data available in NIX format.",
+  "keywords": [
+    {
+      "term": "intracranial EEG"
+    },
+    {
+      "term": "amygdala"
+    },
+    {
+      "term": "single-unit recording"
+    },
+    {
+      "term": "fear stimulus presentation"
+    },
+    {
+      "term": "emotional processing"
+    },
+    {
+      "term": "neuronal firing"
+    },
+    {
+      "term": "aversive stimuli"
+    }
+  ],
+  "source_hash": "6aac51dfe0b942120e3bdd04b11b05c69409e4b9f7fea71d1a2459578d9fa2a3"
 }
