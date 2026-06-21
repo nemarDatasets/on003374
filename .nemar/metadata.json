@@ -2,6 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Dataset of neurons and intracranial EEG from human amygdala during aversive dynamic visual stimulation",
+  "description": "This dataset comprises intracranial EEG recordings and single-unit neuronal activity from the human amygdala of nine epilepsy patients during exposure to dynamic visual stimuli with aversive (fearful faces) and neutral (landscape) content. The recordings enable investigation of amygdalar responses to emotional stimuli across multiple spatial scales, from macroscopic field potentials to microscopic neuronal firing patterns. Data are provided in BIDS format with extended neuronal spike data available in NIX standard.",
+  "methods_description": "Intracranial EEG and neuronal recordings were collected from the amygdalae of nine epilepsy patients undergoing preoperative invasive monitoring in the mesial temporal lobe. Subjects were presented with dynamic visual sequences of fearful faces (aversive condition) interleaved with neutral landscape sequences (neutral condition). Single-unit neuronal spike times and waveforms are included alongside iEEG recordings.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -14,12 +16,30 @@
     "Hennric Jokeit": {},
     "Johannes Sarnthein": {}
   },
-  "related_identifiers": [
+  "keywords": [
     {
-      "identifier": "10.18112/openneuro.ds003374.v1.1.1",
-      "identifier_type": "DOI",
-      "relation_type": "IsIdenticalTo"
+      "term": "intracranial EEG"
     },
+    {
+      "term": "amygdala"
+    },
+    {
+      "term": "single-unit recording"
+    },
+    {
+      "term": "fear conditioning"
+    },
+    {
+      "term": "emotional processing"
+    },
+    {
+      "term": "neuronal firing"
+    },
+    {
+      "term": "epilepsy"
+    }
+  ],
+  "related_identifiers": [
     {
       "identifier": "10.1016/j.neuroimage.2020.116705",
       "identifier_type": "DOI",
@@ -34,6 +54,11 @@
       "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on003374",
       "identifier_type": "URL",
       "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds003374.v1.1.1",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
     }
   ],
   "funding_references": [
@@ -56,12 +81,12 @@
     }
   ],
   "resource_type_general": "Dataset",
+  "resource_type_specific": "iEEG Dataset",
   "modalities": [
     "ieeg"
   ],
-  "resource_type_specific": "iEEG Dataset",
   "sizes": [
-    "0.0 KB (1 files)"
+    "311.4 MB (52 files)"
   ],
   "formats": [
     ".edf",
@@ -74,32 +99,8 @@
     ".pdf",
     ".tsv",
     ".vhdr",
-    ".vmrk"
+    ".vmrk",
+    ".yml"
   ],
-  "description": "This dataset comprises intracranial EEG recordings and single-unit neuronal activity from the human amygdala of nine epilepsy patients during exposure to aversive dynamic visual stimuli. Subjects viewed fearful faces (aversive condition) interleaved with neutral landscapes while undergoing preoperative invasive monitoring in the mesial temporal lobe. The dataset enables investigation of amygdalar responses to emotional stimuli across multiple spatial scales, from macroscopic field potentials to single-neuron firing patterns.",
-  "methods_description": "Intracranial EEG and neuronal spike recordings were collected from nine epilepsy patients undergoing preoperative invasive monitoring of the mesial temporal lobe. Subjects were presented with dynamic visual sequences of fearful faces (aversive condition) interleaved with neutral landscape sequences (neutral condition). Data are provided in BIDS standard format, with extended neuronal data available in NIX format.",
-  "keywords": [
-    {
-      "term": "intracranial EEG"
-    },
-    {
-      "term": "amygdala"
-    },
-    {
-      "term": "single-unit recording"
-    },
-    {
-      "term": "fear stimulus presentation"
-    },
-    {
-      "term": "emotional processing"
-    },
-    {
-      "term": "neuronal firing"
-    },
-    {
-      "term": "aversive stimuli"
-    }
-  ],
-  "source_hash": "6aac51dfe0b942120e3bdd04b11b05c69409e4b9f7fea71d1a2459578d9fa2a3"
+  "source_hash": "a34999beac67db1442d0ef05b9d539559c8d283a6dacaad3327382fa1475510c"
 }
