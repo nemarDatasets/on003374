@@ -1,3 +1,5 @@
+[![DOI](https://img.shields.io/badge/DOI-10.82901%2Fnemar.on003374-blue)](https://doi.org/10.82901/nemar.on003374)
+
 # Dataset of neurons and intracranial EEG from human amygdala during aversive dynamic visual stimulation
 
 ## Summary
