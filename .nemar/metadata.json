@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Dataset of neurons and intracranial EEG from human amygdala during aversive dynamic visual stimulation",
-  "description": "This dataset comprises intracranial EEG recordings and single-unit neuronal activity from the human amygdala of nine epilepsy patients during exposure to dynamic visual stimuli with aversive (fearful faces) and neutral (landscape) content. The recordings enable investigation of amygdalar responses to emotional stimuli across multiple spatial scales, from macroscopic field potentials to microscopic neuronal firing patterns. Data are provided in BIDS format with extended neuronal spike data available in NIX standard.",
-  "methods_description": "Intracranial EEG and neuronal recordings were collected from the amygdalae of nine epilepsy patients undergoing preoperative invasive monitoring in the mesial temporal lobe. Subjects were presented with dynamic visual sequences of fearful faces (aversive condition) interleaved with neutral landscape sequences (neutral condition). Single-unit neuronal spike times and waveforms are included alongside iEEG recordings.",
+  "description": "Electrophysiological dataset recorded from the amygdalae of nine epilepsy patients undergoing preoperative invasive monitoring in the mesial temporal lobe. Participants viewed dynamic visual sequences of fearful faces (aversive condition) interleaved with neutral landscapes (neutral condition). The dataset provides intracranial EEG in BIDS format, together with neuronal spike times and waveforms in NIX format, enabling study of amygdalar responses to aversive stimuli from macroscopic field potentials to single-neuron firing.",
+  "methods_description": "Intracranial EEG and microwire neuronal activity were recorded from the amygdala in epilepsy patients during a task with dynamic fearful face videos and neutral landscape videos. BIDS metadata cover task, subjects, sessions and electrodes; spike times and waveforms are provided in NIX files.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -24,26 +24,26 @@
       "term": "amygdala"
     },
     {
-      "term": "single-unit recording"
-    },
-    {
-      "term": "fear conditioning"
-    },
-    {
-      "term": "emotional processing"
-    },
-    {
-      "term": "neuronal firing"
-    },
-    {
       "term": "epilepsy"
+    },
+    {
+      "term": "single-unit activity"
+    },
+    {
+      "term": "fear"
+    },
+    {
+      "term": "emotional faces"
+    },
+    {
+      "term": "multi-unit activity"
     }
   ],
   "related_identifiers": [
     {
       "identifier": "10.1016/j.neuroimage.2020.116705",
       "identifier_type": "DOI",
-      "relation_type": "References"
+      "relation_type": "IsDescribedBy"
     },
     {
       "identifier": "https://github.com/nemarDatasets/on003374",
@@ -51,14 +51,14 @@
       "relation_type": "IsDescribedBy"
     },
     {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on003374",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
       "identifier": "10.18112/openneuro.ds003374.v1.1.1",
       "identifier_type": "DOI",
       "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/on003374",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
   ],
   "funding_references": [
@@ -73,11 +73,11 @@
     },
     {
       "funder_name": "Swiss National Science Foundation",
-      "award_number": "SNSF 320030_156029"
+      "award_number": "320030_156029"
     },
     {
       "funder_name": "Russian Foundation for Basic Research",
-      "award_number": "RFBR 20-015-00176 A"
+      "award_number": "20-015-00176 A"
     }
   ],
   "resource_type_general": "Dataset",
@@ -86,7 +86,7 @@
     "ieeg"
   ],
   "sizes": [
-    "311.4 MB (52 files)"
+    "297 MB (52 files)"
   ],
   "formats": [
     ".edf",
